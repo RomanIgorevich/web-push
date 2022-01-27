@@ -5,39 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- <input type="button" onclick="notifSet()" value="Notification" /> -->
-    <script type="text/javascript" src="http://localhost:8080/cdn/test.min.js"></script>
-    
+    <button id="btn_modal_window">попап</button>
 
+    <div class="modal" id="mymodal">
+      <div class="modal_content">
+        <span class="close_modal_window">&times;</span>
+        <p>Тестовая модалка</p>
+        <p>Хотите подписаться?</p>
+        <button id="btn_modal_window--yes">Да</button>
+        <button id="btn_modal_window--no">Нет</button>
+      </div>
+    </div>
 
-    <!-- <script>
-      function notifSet() {
-          console.log("тутачки", Notification.permission)
-        if (!(Notification in window)) {
-          alert("Ваш браузер не поддерживает уведомления.");
-        } else if (Notification.permission === "granted") {
-          setTimeout(notifyMe, 2000);
-        } else if (Notification.permission === "denied") {
-          Notification.requestPermission(function (permission) {
-            if (!("permission" in Notification)) {
-              Notification.permission = permission;
-            }
-            if (permission === "granted") {
-              setTimeout(notifyMe, 2000);
-            }
-          });
-        }
-      }
+    <script src="script.js"></script>
 
-      function notifyMe() {
-        const notification = new Notification("Все еще работаешь?", {
-          tag: "ache-mail",
-          body: "Пора сделать паузу и отдохнуть",
-          // icon: ""
-        });
-      }
-    </script> -->
+    <!-- <script type="text/javascript" src="http://localhost:8080/cdn/test.min.js"></script> -->
   </body>
 </html>
