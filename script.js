@@ -9,7 +9,7 @@ btn.onclick = function () {
 };
 btnYes.onclick = function () {
     console.log("было нажатие")
-    self.importScripts("http://localhost:8080/cdn/test_sw.js")
+    // self.importScripts("http://localhost:8080/cdn/test_sw.js")
     modal.style.display = "none";
 };
 btnNo.onclick = function () {
